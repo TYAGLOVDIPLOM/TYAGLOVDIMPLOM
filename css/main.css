@@ -1,0 +1,330 @@
+/**
+    navbar
+*/
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-shadow:  0 4px 10 px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.navbar .container{
+    height:  inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li{
+    display: inline-block;
+}
+
+.navbar-menu li a{
+    display: inline-block;
+    color: #fff;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.7s  ease-in-out;
+}
+
+
+
+.navbar-menu li a:hover{
+    opacity: 1;
+}
+.navbar-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.7s  ease-in-out;
+}
+
+.navbar-brand:hover{
+    color: coral;
+}
+
+:root{
+    
+    --color-header: #f4efec;
+    --color-text: #cdc6c3;
+    
+}
+
+@font-face {
+    font-family: raleway-c;
+    src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+    font-family: outfit-c;
+    src: url(../fonts/outfit-regular.woff2);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: outfit-c;
+    position: relative;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: 50px;
+    color: #fafafa;
+    font-family:  raleway-c;
+    overflow-x: hidden;
+    margin:3%;
+   
+    
+
+
+}
+
+.hero{
+    
+    position: relative;
+    
+    
+   
+  
+}
+
+.main-header{
+    position: relative;
+    margin-top: 200px;
+    
+}
+
+.container{
+    pad: 0 7vw;
+
+   
+}
+
+.main-title{
+    font-size: 40px;
+    position: static;
+    width:min-content;
+    bottom: 12vh;
+    line-height: .9;
+    margin-left: 70%
+    
+}
+.image-pokraska{
+    position: absolute;
+    width:600px;
+    top:240px;
+    border-radius: 30px;
+    
+}
+
+
+.about_us{
+    color: coral;
+    position:relative;
+    font-size:50px;
+    line-height: .9;
+    margin-left: 30%;
+    margin-top:30%;
+    
+}
+
+.about{
+    position: relative;
+    width: 500px;
+    line-height:200%;
+}
+
+
+
+
+.usl{
+    position: relative;
+    color: rgb(255, 128, 82);
+    font-size:50px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+.offer{
+    position: relative;
+    color: rgb(255, 128, 82);
+    font-size:50px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+/*Добавлние стилю заказа*/
+
+
+.form-group{
+    display: inline-block;
+    padding: 10px;
+}
+
+.form-control{
+    width: 200px;
+    height: 110px;
+    position: relative;
+    margin-left: 105%;
+    border: 1px solid rgb(255, 111, 27); 
+    background-color: transparent;
+    font-size: 40px; 
+    font-weight: 400; 
+    color: rgb(255, 111, 27);
+}
+
+.btn_btn-primary{
+    position: absolute;
+    margin-left: 23%;
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    transition: all 0.7s  ease-in-out;
+    text-decoration: none;
+}
+
+.btn_btn-primary:hover{
+    
+    color: coral;
+    background-color: transparent;
+}
+
+
+.contact{
+    margin-top: 10%;
+    margin-left: 65%;
+    font-size: 16px; 
+}
+
+.gallery{
+    display:flex;
+    padding: calc(var(--index)*8) 0;
+}
+.gallery > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery_item{
+    max-width: calc(var(--index)*21);
+    margin-bottom: var(--gallery-gap);
+    max-height: 180vh;
+    border-radius: 8px;
+}
+
+.gallery-left {
+    margin: 0;
+    margin-top: 0;
+   margin-left: 3vw;
+}
+
+.gallery-right .gallery_item{
+    margin: 0;
+    margin-top: var(--gallery-gap);
+    
+    
+}
+
+.text-block{
+    color: var(--color-text);
+    position: relative;
+    
+}
+
+.text-block__h{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--color-header);
+    margin-bottom: 1.5rem;
+    margin-top: 6rem;
+    
+}
+
+.text-block__p{
+    line-height: 1.75;
+    margin-bottom: 20px;
+  
+}
+
+
+/*Добавление слайдера До После Начало*/
+
+.image-comparison{
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.image-comparison2{
+    margin-top: 25vh;
+}
+
+.image-comparison3{
+    margin-top: 18vh;
+}
+
+.image-comparison__before{
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-comparison__image{
+    display: block;
+}
+
+.image-comparison__slider{
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    cursor: col-resize;
+    outline: none;
+}
+
+.image-comparison__slider::before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.image-comparison__slider:hover,
+.image-comparison__slider:focus,
+.image-comparison__slider:hover::before,
+.image-comparison__slider:focus::before {
+    background-color: #ccc;
+}
+
+
+
